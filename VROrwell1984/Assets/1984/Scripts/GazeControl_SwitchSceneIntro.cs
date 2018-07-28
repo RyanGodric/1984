@@ -26,10 +26,10 @@ public class GazeControl_SwitchSceneIntro : MonoBehaviour {
 	public void Update () {
 		MyTime += Time.deltaTime;
 
-		RadialProgress.GetComponent<Image>().fillAmount = MyTime/3;
+		RadialProgress.GetComponent<Image>().fillAmount = MyTime/4;
 
 
-		if(MyTime >=3f )
+		if(MyTime >=4f )
 		{
 		SceneManager.LoadScene(SceneToSwitchTo); }
 		
