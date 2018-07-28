@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/1984/Scenes/WinstonsRoom.unity
-  isLoaded: 1
-  isActive: 1
