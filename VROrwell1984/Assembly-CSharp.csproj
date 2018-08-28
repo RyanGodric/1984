@@ -71,6 +71,7 @@
      <Compile Include="Assets\1984\Scripts\Sc_BookObject.cs" />
      <Compile Include="Assets\1984\Scripts\Sc_DraggableComponent.cs" />
      <Compile Include="Assets\1984\Scripts\Sc_FadeToBlack.cs" />
+     <Compile Include="Assets\1984\Scripts\Sc_FadeToBlackTortureRoom.cs" />
      <Compile Include="Assets\1984\Scripts\Sc_Footsteps.cs" />
      <Compile Include="Assets\1984\Scripts\Sc_JumpScare.cs" />
      <Compile Include="Assets\1984\Scripts\Sc_LightsOut.cs" />

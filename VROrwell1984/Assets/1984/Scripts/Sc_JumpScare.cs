@@ -11,7 +11,8 @@ public class Sc_JumpScare : MonoBehaviour {
     public Animation ratScare;
     public float time;
     public bool played;
-    public GameObject hasFadeToBlack;
+    public GameObject myFade;
+    //public GameObject hasFadeToBlack;
 
 	// Use this for initialization
 	void Start () {
@@ -22,15 +23,14 @@ public class Sc_JumpScare : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         time -= Time.deltaTime;
-        if (time <= 9.5f && time >= 9.0f)
-        {
-            hasFadeToBlack.SetActive(true);
-            hasFadeToBlack.GetComponent<Sc_FadeToBlack>().speed = .5f;
-        }
         if (time <= 0 && !played)
-        {
+        { 
             ratScare.Play();
             played = true;
+        }
+        if (time <= -1.0f)
+        {
+            myFade.GetComponent<Sc_FadeToBlackTortureRoom>().Fade();
         }
 	}
 }

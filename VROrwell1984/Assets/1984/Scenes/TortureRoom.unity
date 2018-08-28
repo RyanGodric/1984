@@ -1396,6 +1396,7 @@ GameObject:
   - component: {fileID: 731150928}
   - component: {fileID: 731150927}
   - component: {fileID: 731150932}
+  - component: {fileID: 731150933}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1485,6 +1486,23 @@ MonoBehaviour:
   Anime: {fileID: 0}
   MyTime: 0
   RadialProgress: {fileID: 1062692021}
+--- !u!114 &731150933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 731150924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c28b1b463333e44086b1522f2124ef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lights:
+  - {fileID: 1640222472}
+  - {fileID: 251648163}
+  - {fileID: 1945893833}
+  speed: 0
+  fade: 0
 --- !u!1 &830437465
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,7 +1935,7 @@ MonoBehaviour:
   ratScare: {fileID: 1405629249}
   time: 0
   played: 0
-  hasFadeToBlack: {fileID: 1755077794}
+  myFade: {fileID: 731150924}
 --- !u!1001 &1294123158
 Prefab:
   m_ObjectHideFlags: 0
@@ -2914,7 +2932,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1755077794}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c84d062054137c34b9f70a5d5066ebc8, type: 3}
   m_Name: 
